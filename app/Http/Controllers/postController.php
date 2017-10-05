@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\input;
 use App\post;
 use App\like;
 use App\comment;
+use App\User;
 
 class postController extends Controller
 {
@@ -19,6 +20,13 @@ class postController extends Controller
      */
     public function index()
     {
+
+        $post = post::find(12);
+
+        $user = $post->user()->get();
+
+        return $user;
+        
         
         
      $postData =  DB::table('posts')
