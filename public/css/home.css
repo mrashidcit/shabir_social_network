@@ -1,0 +1,18 @@
+#left-side-bar{
+        
+          position:fixed;
+           
+          height:80%; 
+          display:inline-block;
+
+}
+        #container{
+            width:64%;
+            border-radius:5px;
+            display:inline-block;   
+            margin-left:26%;
+        }
+
+       
+
+
