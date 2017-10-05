@@ -124,9 +124,11 @@ class postController extends Controller
 
     $user_id = Auth::user()->id;
 
+    // dd($user_id);
+
     $comment = comment::CREATE([
-        'user_id' => $user_id,
-        'post_id' => $post_id,
+        'u_id' => $user_id,
+        'c_id' => $post_id,
         'comment' => $request->comment
         
     ]);
